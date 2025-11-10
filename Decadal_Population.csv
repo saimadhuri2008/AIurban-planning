@@ -1,13 +1,3 @@
-"S. No.","Variables","1971","1981","1991","2001","2011"
-"M","F","M","F","M","F","M","F","M","F"
-"1","Population","11,64,839","10,32,508","18,39,958","16,55,608","25,42,950","22,96,212","34,26,599","31,10,525","50,22,661","45,98,890"
-"2","Child Population (0-6)","Not Available","Not Available","Not Available","Not Available","3,55,711","3,37,912","3,97,648","3,74,892","5,41,656","5,11,181"
-"3","Literates","6,94,630","4,45,134","12,23,327","8,50,583","18,14,197","13,47,504","26,63,055","21,19,510","40,78,041","34,34,235"
-"4","SC","1,54,488","1,42,354","2,67,947","2,52,771","3,67,478","3,44,297","4,35,162","4,15,885","6,07,725","5,90,660"
-"5","ST","2,999","2,595","18,789","17,148","27,938","25,693","44,971","41,047","99,164","91,075"
-"Note:-"
-"1. Child population was not tabulated in 1971 and 1981 Census."
-"2. Data for 1971, 1981, 1991 and 2001 Census is adjusted as per Jurisdiction of 2011."
-"3. In case of no Scheduled Caste (SC) or Scheduled Tribe (ST) in a State/UT, data for SC/ST is shown as “Not Available”."
-"4. Literate population for 1971 and 1981 Census relates to population aged five years and above and for the 1991, 2001 and 2011 Censuses it relates to the population aged seven years and above."
-"5. There may be slight difference in present recasted population at district level with that of previous publications due to  the present robust method of linking/concordance at village/town level as per the jurisdictional changes."
+version https://git-lfs.github.com/spec/v1
+oid sha256:64f5d0d9634a427a4b47b66f4a5bdba347dc7bda2877434dbd0ed09e4658e2e3
+size 1471
