@@ -1,0 +1,12 @@
+{
+  "source_excel": "D:\\hlpca-29572-2011_h14_census.xlsx",
+  "rows": 841,
+  "generated_on": "2025-11-12T00:23:51.748719",
+  "outputs": {
+    "csv": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socioeconomic_bengaluru_final.csv",
+    "geojson": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socioeconomic_bengaluru_final.geojson",
+    "parquet": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socioeconomic_bengaluru_final.parquet",
+    "preview_json": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socio_head_preview.json"
+  },
+  "notes": "Features include real-extracted fields where available and synthetic fields for missing attributes. 'h3_index' placeholder added for later H3 join."
+}

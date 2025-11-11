@@ -1,247 +1,299 @@
+#!/usr/bin/env python3
 """
-File: census_data.py
-Author: Gemini
-Project: Urban Infrastructure & Spatial Planning - Bengaluru
-Description:
-    This script is the core module for the socioeconomic data layer. It attempts 
-    to fetch real ward boundaries via Bhuvan WFS and generates mock Census attributes 
-    for simulation. Enhanced with vulnerability and equity metrics.
+socioeconomic_data.py
+
+Build enriched socioeconomic dataset from uploaded Census Excel (HH-14 style) and
+produce CSV / GeoJSON / Parquet outputs. Robust header detection + dtype sanitization
+for parquet export (pyarrow friendly).
 """
-import os
+from __future__ import annotations
+import logging
+from pathlib import Path
+import json
+import numpy as np
 import pandas as pd
 import geopandas as gpd
-from shapely.geometry import Polygon
-import numpy as np
-import datetime
-import logging
-import json # Added for metadata saving
+from shapely.geometry import Point
+import sys
 
-# --- 1. CONFIGURATION AND SETUP ---
+# -------------------------
+# CONFIG
+# -------------------------
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - [%(levelname)s] - %(message)s")
+log = logging.getLogger("socioeconomic")
 
-# Configure logging (CRITICAL for production tracing)
-os.makedirs("../logs/", exist_ok=True)
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - [%(levelname)s] - %(message)s",
-    handlers=[logging.StreamHandler(), logging.FileHandler('../logs/data_extraction.log')]
-)
-log = logging.getLogger(__name__)
+# Input Excel (uploaded earlier)
+INPUT_PATH = Path("D:\\hlpca-29572-2011_h14_census.xlsx")  # adjust if your file path differs
 
-log.info("--- Starting Socioeconomic Data Extraction Framework (Census Layer) ---")
-print("--- Starting Socioeconomic Data Extraction Framework (Census Layer) ---")
+# Output directory (project-standard)
+OUTPUT_DIR = Path(__file__).resolve().parents[2] / "data" / "socioeconomic"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# 1a. Reproducibility
-np.random.seed(42)
+# Bengaluru center for synthetic geometry
+CENTER_LAT, CENTER_LON = 12.9716, 77.5946
 
-# Define target data directory
-output_dir_socio = "../data/socioeconomic/"
-os.makedirs(output_dir_socio, exist_ok=True)
-log.info(f"Saving files to: {output_dir_socio}")
-print(f"   -> Saving files to: {output_dir_socio}")
+# -------------------------
+# Helpers
+# -------------------------
+def find_header_row(excel_path: Path, sheet_name: str, max_rows: int = 40) -> int:
+    """Heuristic to locate header row in a messy Excel sheet."""
+    dfp = pd.read_excel(excel_path, sheet_name=sheet_name, header=None, nrows=max_rows)
+    keywords = ["ward", "area", "district", "household", "population", "toilet", "electric", "water", "structure", "tv"]
+    for i, row in dfp.iterrows():
+        row_text = " ".join([str(x).lower() for x in row.fillna("")])
+        if any(k in row_text for k in keywords):
+            return i
+    return 0
 
-# Constants
-N_AREAS_MOCK = 198  # Default mock number of Wards/Taluks
-CRS_WGS84 = "EPSG:4326"
-CRS_METRIC = "EPSG:32643" # UTM Zone 43N for Bengaluru
+def safe_colname(c: str) -> str:
+    return str(c).strip().replace("\n", " ").replace("  ", " ").replace(" ", "_").lower()
 
-# ---------------------------------------------------------------------
-# WFS Integration Approach 
-# ---------------------------------------------------------------------
-BHUVAN_WFS_URL = (
-    "https://bhuvan.nrsc.gov.in/geoserver/<workspace>/wfs?"  
-    "service=WFS&version=1.0.0&request=GetFeature&"
-    "typeName=<layer>&outputFormat=application/json"
-)
+def pct_from_col(df: pd.DataFrame, colname: str | None, default_mean: float, N: int) -> pd.Series:
+    """Return a percent series either derived from a numeric column or a synthetic distribution."""
+    if colname and colname in df.columns:
+        s = pd.to_numeric(df[colname], errors="coerce")
+        # if values look like counts (max > 100), convert to percent by dividing by households if plausible
+        if s.max(skipna=True) is not None and s.max(skipna=True) > 100 and "households" in df.columns:
+            denom = df["households"].replace({0: 1}).astype(float)
+            pct = (s.astype(float) / denom * 100).clip(0, 100)
+            return pct.fillna(default_mean)
+        else:
+            return s.fillna(default_mean)
+    else:
+        return pd.Series(np.random.normal(default_mean, 5, N)).clip(0, 100).round(2)
 
-# --- NEW FUNCTION: Bhuvan WFS or Mock Fallback for Boundaries ---
+# -------------------------
+# MAIN
+# -------------------------
+def build_socioeconomic_dataset(input_path: Path, output_dir: Path) -> None:
+    log.info("Reading Excel: %s", input_path)
+    if not input_path.exists():
+        log.error("Input file not found: %s", input_path)
+        raise FileNotFoundError(input_path)
 
-def load_boundaries_from_bhuvan_or_fallback(wfs_url, n_areas_mock):
-    """
-    Attempts to load real ward boundaries using the Bhuvan WFS approach. 
-    Falls back to mock geometry generation if the WFS connection fails.
-    """
-    # 1. ATTEMPT WFS FETCH
+    xls = pd.ExcelFile(input_path)
+    sheets = xls.sheet_names
+    log.info("Sheets found: %s", sheets)
+
+    # pick a sheet with probable header row (heuristic)
+    chosen_sheet = None
+    header_row = 0
+    for sh in sheets:
+        hr = find_header_row(input_path, sh)
+        if hr is not None:
+            chosen_sheet = sh
+            header_row = hr
+            break
+    if chosen_sheet is None:
+        chosen_sheet = sheets[0]
+
+    log.info("Chosen sheet: %s (header detection)", chosen_sheet)
+    df_raw = pd.read_excel(input_path, sheet_name=chosen_sheet, header=header_row)
+    df_raw = df_raw.dropna(how="all").reset_index(drop=True)
+    log.info("Rows read: %d", len(df_raw))
+
+    # Normalize column names
+    rename_map = {c: safe_colname(c) for c in df_raw.columns}
+    df_raw.rename(columns=rename_map, inplace=True)
+    cols = df_raw.columns.tolist()
+
+    # best-effort column finders
+    def find_col_like(keywords):
+        for k in keywords:
+            for c in cols:
+                if k in c:
+                    return c
+        return None
+
+    # mappings (best-effort)
+    pop_c = find_col_like(["population", "total_population", "persons", "total_persons"])
+    hh_c = find_col_like(["household", "households"])
+    area_c = find_col_like(["ward", "area_name", "area", "name"])
+    lit_c = find_col_like(["literacy", "literate"])
+    elec_c = find_col_like(["electric"])
+    toilet_c = find_col_like(["toilet"])
+    water_c = find_col_like(["water", "drinking"])
+    tv_c = find_col_like(["tv", "television", "tele"])
+
+    # Start building working DF
+    df = df_raw.copy()
+    N = len(df)
+    np.random.seed(42)
+
+    # population
+    if pop_c:
+        try:
+            df["population"] = pd.to_numeric(df[pop_c], errors="coerce")
+        except Exception:
+            df["population"] = np.nan
+    else:
+        df["population"] = np.nan
+
+    # households
+    if hh_c:
+        try:
+            df["households"] = pd.to_numeric(df[hh_c], errors="coerce")
+        except Exception:
+            df["households"] = np.nan
+    else:
+        df["households"] = np.nan
+
+    # area_name
+    if area_c:
+        df["area_name"] = df[area_c].astype(str)
+    else:
+        df["area_name"] = [f"Area_{i}" for i in range(N)]
+
+    # literacy
+    if lit_c:
+        df["literacy_rate"] = pd.to_numeric(df[lit_c], errors="coerce")
+    else:
+        df["literacy_rate"] = np.nan
+
+    # Fill missing population/households with plausible synthetic values
+    if df["population"].isna().all():
+        df["population"] = np.random.randint(20000, 90000, N)
+    else:
+        df["population"].fillna(int(df["population"].median()), inplace=True)
+
+    if df["households"].isna().all():
+        df["households"] = (df["population"] / np.random.uniform(3.5, 5.0, N)).astype(int)
+    else:
+        df["households"] = df["households"].fillna((df["population"] / 4).round().astype(int))
+
+    # literacy fallback
+    if df["literacy_rate"].isna().all():
+        df["literacy_rate"] = np.round(np.random.uniform(70, 97, N), 2)
+    else:
+        df["literacy_rate"].fillna(df["literacy_rate"].median(), inplace=True)
+
+    # infrastructure / amenities percents
+    df["electricity_access_pct"] = pct_from_col(df, elec_c, 95, N)
+    df["toilet_facility_pct"] = pct_from_col(df, toilet_c, 85, N)
+    df["tap_water_access_pct"] = pct_from_col(df, water_c, 80, N)
+    df["ownership_tv_pct"] = pct_from_col(df, tv_c, 65, N)
+
+    # Derived/synthetic socioeconomic attributes
+    df["avg_household_size"] = (df["population"] / df["households"]).replace([np.inf, -np.inf], 4).fillna(4).round(2)
+    df["avg_household_income_rs"] = np.random.randint(60000, 450000, N)
+    df["poverty_index"] = np.clip(np.random.normal(0.25, 0.10, N), 0.03, 0.6).round(3)
+    df["employment_rate"] = np.clip((df["literacy_rate"] / 100) * (1 - df["poverty_index"]) * np.random.uniform(0.7, 1.0, N), 0.35, 0.96).round(2)
+    df["pct_informal_housing"] = np.clip(df["poverty_index"] * 100 + np.random.normal(5, 3, N), 3, 70).round(2)
+    df["pct_elderly"] = np.clip(8 + (1 - df["poverty_index"]) * 15 + np.random.normal(0, 3, N), 3, 30).round(2)
+    df["green_space_access_pct"] = np.clip(np.random.normal(30, 10, N) - df["poverty_index"] * 10, 2, 70).round(2)
+    df["vulnerability_index"] = ((df["poverty_index"] * 0.45) + (df["pct_informal_housing"] / 100 * 0.3) + ((30 - df["pct_elderly"]) / 30 * 0.25)).round(3)
+
+    # placeholder for H3 (to be filled after spatial join externally)
+    df["h3_index"] = None
+
+    # Create simple point geometry for visualization (randomly jittered around Bengaluru center)
+    df["lat"] = CENTER_LAT + np.random.uniform(-0.15, 0.15, N)
+    df["lon"] = CENTER_LON + np.random.uniform(-0.15, 0.15, N)
+    geometry = [Point(xy) for xy in zip(df["lon"], df["lat"])]
+    gdf = gpd.GeoDataFrame(df, geometry=geometry, crs="EPSG:4326")
+
+    # Save CSV (straightforward)
+    csv_out = output_dir / "socioeconomic_bengaluru_final.csv"
+    gdf.to_csv(csv_out, index=False)
+    log.info("Saved CSV: %s", csv_out)
+
+    # Save GeoJSON (sanitize dtypes to avoid driver issues)
+    geojson_out = output_dir / "socioeconomic_bengaluru_final.geojson"
+    gdf2 = gdf.copy()
+    # convert pandas nullable integers/floats to numpy-backed types for GeoJSON compatibility
+    for c in gdf2.columns:
+        try:
+            if pd.api.types.is_integer_dtype(gdf2[c].dtype) or str(gdf2[c].dtype).startswith("Int"):
+                gdf2[c] = gdf2[c].fillna(-1).astype("int64")
+            elif pd.api.types.is_float_dtype(gdf2[c].dtype) or str(gdf2[c].dtype).startswith("Float"):
+                gdf2[c] = gdf2[c].astype("float64")
+        except Exception:
+            pass
     try:
-        # Check if the URL placeholders have been filled
-        if "<workspace>" in wfs_url or "<layer>" in wfs_url:
-            raise ValueError("Bhuvan WFS URL has placeholders. Falling back to mock data.")
+        gdf2.to_file(geojson_out, driver="GeoJSON")
+        log.info("Saved GeoJSON: %s", geojson_out)
+    except Exception as e:
+        log.warning("GeoJSON write warning/failure: %s", e)
 
-        log.info("Attempting to fetch real ward boundaries via Bhuvan WFS.")
-        print("   -> Attempting to fetch real ward boundaries via Bhuvan WFS...")
-        
-        # This line will connect to the external service
-        real_gdf = gpd.read_file(wfs_url)
-        
-        if real_gdf.empty:
-            raise Exception("WFS returned an empty GeoDataFrame.")
+    # Robust parquet save with dtype sanitization (pyarrow-friendly)
+    parquet_dir = output_dir
+    parquet_dir.mkdir(parents=True, exist_ok=True)
+    parquet_path = parquet_dir / "socioeconomic_bengaluru_final.parquet"
+    try:
+        import pyarrow  # ensure available
+        df_parquet = gdf2.copy()
+        if "geometry" in df_parquet.columns:
+            df_parquet["geometry_wkt"] = df_parquet["geometry"].apply(lambda g: g.wkt if g is not None else None)
+            df_parquet = df_parquet.drop(columns=["geometry"])
 
-        # Standard cleaning
-        real_gdf = real_gdf.to_crs(CRS_WGS84)
-        
-        log.info(f"Successfully loaded {len(real_gdf)} boundaries from Bhuvan WFS.")
-        print(f"   ✅ Successfully loaded {len(real_gdf)} boundaries via WFS.")
-        return real_gdf
-        
-    except (Exception, ValueError) as e:
-        log.warning(f"Failed to load boundaries from Bhuvan WFS (Error: {e}). Falling back to mock geometry.")
-        print("   ⚠️ WFS fetch failed or URL incomplete. Generating mock boundaries as fallback...")
-        
-        # 2. FALLBACK to MOCK GEOMETRY GENERATION
-        center_lat, center_lon = 12.9716, 77.5946
-        geometries = []
-        for i in range(n_areas_mock):
-            # Base jitter for area center
-            lon_j = center_lon + np.random.uniform(-0.15, 0.15)
-            lat_j = center_lat + np.random.uniform(-0.15, 0.15)
-            
-            # Define a small square area
-            size = np.random.uniform(0.005, 0.015)
-            polygon = Polygon([
-                (lon_j - size, lat_j - size),
-                (lon_j + size, lat_j - size),
-                (lon_j + size, lat_j + size),
-                (lon_j - size, lat_j + size)
-            ])
-            geometries.append(polygon)
+        # sanitize object columns (decode bytes, coerce numeric if majority numeric)
+        obj_cols = df_parquet.select_dtypes(include=["object"]).columns.tolist()
+        log.info("Object-typed columns before sanitization: %s", obj_cols)
+        for c in obj_cols:
+            def decode_if_bytes(x):
+                if isinstance(x, (bytes, bytearray)):
+                    try:
+                        return x.decode("utf-8", errors="ignore")
+                    except Exception:
+                        return str(x)
+                return x
+            df_parquet[c] = df_parquet[c].apply(decode_if_bytes)
 
-        # Create mock geometry GDF
-        mock_geometry_gdf = gpd.GeoDataFrame({
-            'area_id': [f'Ward_{i:03d}' for i in range(n_areas_mock)]
-        }, geometry=geometries, crs=CRS_WGS84)
-        
-        log.info(f"Mock geometry GeoDataFrame created with N={len(mock_geometry_gdf)} areas.")
-        return mock_geometry_gdf
+            parsed = pd.to_numeric(df_parquet[c], errors="coerce")
+            num_count = parsed.notna().sum()
+            frac_num = num_count / max(1, len(parsed))
+            if frac_num >= 0.85:
+                log.info("Column '%s' appears mostly numeric (%.2f). Casting to float64.", c, frac_num)
+                df_parquet[c] = parsed.astype("float64")
+            else:
+                log.info("Column '%s' treated as text. Casting to str.", c)
+                df_parquet[c] = df_parquet[c].astype(str).fillna("").replace("nan", "")
 
+        # convert pandas nullable ints/floats to numpy floats to avoid pyarrow issues
+        for c in df_parquet.columns:
+            try:
+                if str(df_parquet[c].dtype).startswith("Int") or str(df_parquet[c].dtype).startswith("Float"):
+                    df_parquet[c] = df_parquet[c].astype("float64")
+            except Exception:
+                pass
 
-# --- 2. DATA GENERATION / FETCH (Ward/Taluk Level) ---
-log.info("Starting Data Fetch/Generation for Socioeconomic Layer.")
-print("\n[STEP 2: Integrating Real Boundaries (Bhuvan WFS) and Mock Attributes]")
+        # finally write parquet
+        df_parquet.to_parquet(parquet_path, index=False, engine="pyarrow")
+        log.info("Saved Parquet: %s", parquet_path)
+    except Exception as e:
+        log.exception("Parquet write failed after sanitization. Error: %s", e)
+        log.warning("Parquet export skipped or failed; check df_parquet.dtypes for problematic columns.")
 
-# 2a. Fetch or Generate Boundaries
-geometry_gdf = load_boundaries_from_bhuvan_or_fallback(BHUVAN_WFS_URL, N_AREAS_MOCK)
-N_AREAS_FINAL = len(geometry_gdf)
+    # Save small preview JSON (non-geometry) for quick inspection
+    preview_df = gdf2.drop(columns=["geometry"], errors="ignore").head(10)
+    preview_json_path = output_dir / "socio_head_preview.json"
+    preview_df.to_json(str(preview_json_path), orient="records")
+    log.info("Saved preview JSON: %s", preview_json_path)
 
-# 2b. Mock Attribute Data Generation 
-log.info(f"Generating mock attributes to match {N_AREAS_FINAL} geometries...")
+    # metadata
+    metadata = {
+        "source_excel": str(input_path),
+        "rows": int(N),
+        "generated_on": pd.Timestamp.now().isoformat(),
+        "outputs": {
+            "csv": str(csv_out),
+            "geojson": str(geojson_out),
+            "parquet": str(parquet_path) if parquet_path.exists() else None,
+            "preview_json": str(preview_json_path),
+        },
+        "notes": "Features include real-extracted fields where available and synthetic fields for missing attributes. 'h3_index' placeholder added for later H3 join."
+    }
+    meta_path = output_dir / "socioeconomic_metadata.json"
+    with open(meta_path, "w", encoding="utf-8") as mf:
+        json.dump(metadata, mf, indent=2)
+    log.info("Saved metadata: %s", meta_path)
 
-# Initialize core attributes
-socioeconomic_df = pd.DataFrame({
-    'population': np.random.randint(25000, 80000, N_AREAS_FINAL),
-    'literacy_rate': np.random.uniform(75.0, 95.0, N_AREAS_FINAL).round(2),
-    'avg_household_income_rs': np.random.randint(50000, 300000, N_AREAS_FINAL),
-    'poverty_index': np.clip(np.random.normal(0.2, 0.1, N_AREAS_FINAL), 0.05, 0.5).round(3)
-})
-
-# --- ADDED: ENHANCED VULNERABILITY METRICS ---
-# Correlate vulnerability with poverty index
-base_vulnerability = socioeconomic_df['poverty_index'] * 100
-socioeconomic_df['pct_informal_housing'] = np.clip(
-    base_vulnerability + np.random.normal(0, 5, N_AREAS_FINAL), 
-    5, 40
-).round(2)
-socioeconomic_df['pct_elderly'] = np.clip(
-    10 + (1 - socioeconomic_df['poverty_index']) * 15 + np.random.normal(0, 3, N_AREAS_FINAL), # Mock higher elderly population in established, less poor wards
-    5, 25
-).round(2)
-# --- END ADDED VULNERABILITY METRICS ---
+    log.info("Done. Created %d socioeconomic records.", N)
 
 
-# 2c. Merge attributes onto geometry
-socioeconomic_gdf = geometry_gdf.merge(
-    socioeconomic_df, 
-    left_index=True, 
-    right_index=True, 
-    how='left'
-)
-
-# Ensure an 'area_id' exists for consistency
-if 'area_id' not in socioeconomic_gdf.columns:
-    socioeconomic_gdf['area_id'] = socioeconomic_gdf.index.map(lambda x: f'Ward_{x:03d}')
-    
-log.info(f"Final Socioeconomic GeoDataFrame created with {len(socioeconomic_gdf)} records.")
-
-
-# --- 3. DATA ENRICHMENT AND INTEGRITY ---
-log.info("Starting Data Enrichment and Integrity Checks.")
-print("\n[STEP 3: Enrichment and Integrity]")
-
-# Derived Socioeconomic Metrics
-socioeconomic_gdf["income_per_capita_rs"] = (
-    socioeconomic_gdf["avg_household_income_rs"] / socioeconomic_gdf["population"]
-).round(2)
-socioeconomic_gdf["literacy_poverty_ratio"] = (
-    socioeconomic_gdf["literacy_rate"] / (socioeconomic_gdf["poverty_index"] + 1e-6)
-).round(2)
-
-
-# Coordinate Validation 
-socioeconomic_gdf["is_valid"] = socioeconomic_gdf.geometry.is_valid
-if not socioeconomic_gdf["is_valid"].all():
-    log.warning("Some geometries are invalid. Attempting to fix with .buffer(0)...")
-    print("   ⚠️ Some geometries are invalid. Attempting to fix...")
-    socioeconomic_gdf["geometry"] = socioeconomic_gdf.geometry.buffer(0)
-    socioeconomic_gdf.drop(columns=['is_valid'], inplace=True)
-    
-if not socioeconomic_gdf.geometry.is_valid.all():
-    log.error("Geometry fix failed. Aborting save.")
-    print("   🛑 Critical Error: Geometry fix failed.")
-    # In a real pipeline, you would use sys.exit() or raise an error here.
-else:
-    log.info("Geometry validation and fix completed successfully.")
-    print("   ✅ Geometry validation passed.")
-    
-# Reproject to metric CRS (UTM) for calculations like area, perimeter, etc.
-metric_gdf = socioeconomic_gdf.to_crs(CRS_METRIC)  
-log.info(f"Reprojected to metric CRS ({CRS_METRIC}) for analysis.")
-
-socioeconomic_gdf['area_sq_m'] = metric_gdf.geometry.area.round(2)
-
-# Reproject back to WGS84 for visualization and saving (GeoJSON standard)
-socioeconomic_gdf = socioeconomic_gdf.to_crs(CRS_WGS84)
-
-
-# --- 4. DATA SAVING AND SUMMARIZING ---
-log.info("Starting Data Saving and Summarization.")
-print("\n[STEP 4: Saving Data]")
-
-# Save the final GeoDataFrame
-file_path = os.path.join(output_dir_socio, "socioeconomic_bengaluru_mock.geojson")
-socioeconomic_gdf.to_file(file_path, driver='GeoJSON')
-
-log.info(f"Socioeconomic data saved to: {file_path}")
-print(f"   ✅ Socioeconomic data saved to: {file_path}")
-print(f"   Total Areas Processed (Wards/Taluks): {len(socioeconomic_gdf)}")
-
-log.info("\n--- Data Summary (Quick Verification) ---")
-summary_stats = socioeconomic_gdf[[
-    "population", 
-    "avg_household_income_rs", 
-    "pct_informal_housing", # Added new field
-    "pct_elderly", # Added new field
-    "poverty_index"
-]].describe().round(2)
-
-log.info(f"Data Summary:\n{summary_stats.to_string()}")
-print("\n--- Data Summary (Quick Verification) ---")
-print(summary_stats)
-
-
-# Export metadata
-metadata = {
-    "city": "Bengaluru",
-    "date_created": datetime.datetime.now().isoformat(),
-    "data_source": "MOCK / Synthetic Data (Boundaries: Attempted Bhuvan WFS)",
-    "total_areas": len(socioeconomic_gdf),
-    "primary_crs": socioeconomic_gdf.crs.to_string(),
-    "attributes": list(socioeconomic_gdf.columns),
-    "notes": "Generated to simulate Census/BBMP data for modeling. Enhanced with informal housing and elderly population percentages."
-}
-metadata_path = os.path.join(output_dir_socio, "socioeconomic_metadata.json")
-with open(metadata_path, "w") as f:
-    json.dump(metadata, f, indent=4)
-log.info(f"Metadata exported to {metadata_path}")
-print(f"   ✅ Metadata exported to {metadata_path}")
-
-
-log.info("--- Socioeconomic Data Acquisition Complete ---")
-print("\n--- Socioeconomic Data Acquisition Complete ---")
+if __name__ == "__main__":
+    try:
+        build_socioeconomic_dataset(INPUT_PATH, OUTPUT_DIR)
+    except Exception as exc:
+        log.exception("Failed to build socioeconomic dataset: %s", exc)
+        sys.exit(1)
