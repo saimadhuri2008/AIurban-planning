@@ -1,7 +1,7 @@
 {
   "source_excel": "D:\\hlpca-29572-2011_h14_census.xlsx",
   "rows": 841,
-  "generated_on": "2025-11-12T00:23:51.748719",
+  "generated_on": "2025-11-12T10:16:59.294096",
   "outputs": {
     "csv": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socioeconomic_bengaluru_final.csv",
     "geojson": "C:\\Users\\jbhuv\\OneDrive\\Desktop\\Urban-Planning\\data\\socioeconomic\\socioeconomic_bengaluru_final.geojson",
