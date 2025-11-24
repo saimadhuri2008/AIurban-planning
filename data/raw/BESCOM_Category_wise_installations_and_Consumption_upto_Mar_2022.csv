@@ -1,9 +1,3 @@
-Sl.No,Category,Low Tension Installations (in Nos),High Tension  Installations (in Nos),Low Tension Consumption (in Million units),High Tension Consumption (in Million units)
-1,Bhagya Jyothi /Kuteer Jyothi ,843365,NA,19242280,NA
-2,Domestic,8942353,479,556234672,6795077
-3,Commercial,1224451,8091,156453057,133644535
-4,Industrial,234002,7978,103325640,378733376
-5,Agriculture,986573,72,852683417,6321125
-6,Water Supply,90664,292,121137626,64391079
-7,Public Lighting,78167,NA,51871331,NA
-8,Others,908878,2930,22665955,37200193
+version https://git-lfs.github.com/spec/v1
+oid sha256:61d4d72ee596865f919db884f688c0fc4e915513f6a86e1c016bef6ab1d9ef22
+size 533
