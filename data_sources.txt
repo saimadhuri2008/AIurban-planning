@@ -1,0 +1,7 @@
+real data sources
+
+1.bbmp 
+ward number name population etc for ward
+2.bda in policy data
+boundary from OpenStreetMap
+buildings from osm

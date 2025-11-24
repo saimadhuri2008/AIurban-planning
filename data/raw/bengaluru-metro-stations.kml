@@ -1,0 +1,3475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bengaluru Metro Stations</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Whitefield (Kadugodi)</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197744</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Whitefield (Kadugodi)</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ವೈಟ್‌ಫೀಲ್ಡ್ (ಕಾಡುಗೋಡಿ)</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Whitefield</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Whitefield metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.757859,12.9956461,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Hopefarm Channasandra</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197745</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Hopefarm Channasandra</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಹೋಪ್ ಫಾರ್ಮ್ ಚನ್ನಸಂದ್ರ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Channasandra</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Channasandra metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.75375819999999,12.9871126,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kadugodi Tree Park</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197748</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Kadugodi Tree Park</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕಾಡುಗೋಡಿ ಟ್ರೀ ಪಾರ್ಕ್</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Kadugodi</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Kadugodi metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.74702619999999,12.9856768,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Pattandur Agrahara</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197749</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Pattandur Agrahara</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಪಟ್ಟಂದೂರು ಅಗ್ರಹಾರ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Pattandur Agrahara metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.7377718,12.9876393,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sathya Sai Hospital</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197751</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Sathya Sai Hospital</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಶ್ರೀ ಸತ್ಯ ಸಾಯಿ ಆಸ್ಪತ್ರೆ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Sri Satya Sai Hospital</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Sri Sathya Sai Hospital metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.72753609999999,12.9811949,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nallurahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197754</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Nallurahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ನಲ್ಲೂರಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Nallurhalli metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.7248845,12.9766408,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kundalahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197755</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Kundalahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕುಂದಲಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Kundalahalli metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.71555859999999,12.977594,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Seetharampalya</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197757</value>
+			</Data>
+			<Data name="alt_name">
+				<value>Sitaramapalya</value>
+			</Data>
+			<Data name="name">
+				<value>Seetharampalya</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಸೀತಾರಾಮ ಪಾಳ್ಯ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Sitharama Palya metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.7087519,12.9809532,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Hoodi</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197761</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Hoodi</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಹೂಡಿ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Hoodi Junction</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Hoodi Junction metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.711326,12.9888029,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Garudacharpalya</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197762</value>
+			</Data>
+			<Data name="alt_name">
+				<value>ಗರುಡಾಚಾರ್ ಪಾಳ್ಯ</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Garudacharpalya</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಗರುಡಾಚಾರ್ ಪಾಳ್ಯ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Garudacharapalya metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.7036768,12.9934505,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Singayyanapalya</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197764</value>
+			</Data>
+			<Data name="alt_name">
+				<value>Mahadevapura</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Singayyanapalya</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಸಿಂಗಯ್ಯನಪಾಳ್ಯ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>Mahadevapura</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Mahadevapura metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.69271759999999,12.9965445,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Krishnarajapura</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5760197765</value>
+			</Data>
+			<Data name="colour">
+				<value>#e542de</value>
+			</Data>
+			<Data name="name">
+				<value>Krishnarajapura</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕೃಷ್ಣರಾಜಪುರ (ಕೆ.ಆರ್.ಪುರ)</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="old_name">
+				<value>K R Pura</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Krishnarajapuram metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.6776721,12.9999042,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nagasandra</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5960788723</value>
+			</Data>
+			<Data name="code">
+				<value>NGSA</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Nagasandra</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ನಾಗಸಂದ್ರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>നാഗസന്ദ്ര</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.50013490000001,13.0479497,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dasarahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5960788724</value>
+			</Data>
+			<Data name="code">
+				<value>DSH</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Dasarahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ದಾಸರಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ദാസറഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5125535,13.0432607,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jalahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5960788725</value>
+			</Data>
+			<Data name="code">
+				<value>JLHL</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Jalahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಜಾಲಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ജാലഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="parking">
+				<value>yes</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikidata">
+				<value>Q30647031</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Jalahalli metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.51973510000001,13.0394104,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Srirampura</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/5960788726</value>
+			</Data>
+			<Data name="code">
+				<value>SPRU</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Srirampura</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಶ್ರೀರಾಮಪುರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ശ്രീരാംപുര</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5631963,12.9965253,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Baiyyappanahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857549</value>
+			</Data>
+			<Data name="code">
+				<value>BYPH</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Baiyyappanahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಬೈಯ್ಯಪ್ಪನಹಳ್ಳಿ ಮೆಟ್ರೋ ನಿಲ್ದಾಣ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ബൈയപ്പനഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.6523976,12.9907623,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Swami Vivekananda Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857550</value>
+			</Data>
+			<Data name="code">
+				<value>SVRD</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Swami Vivekananda Road</value>
+			</Data>
+			<Data name="name:etymology:wikidata">
+				<value>Q47478</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಸ್ವಾಮಿ ವಿವೇಕಾನಂದ ರಸ್ತೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>സ്വാമി വിവേകാനന്ദ റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.644897,12.9859306,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Indiranagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857551</value>
+			</Data>
+			<Data name="code">
+				<value>IDNG</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Indiranagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಇಂದಿರಾನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ഇന്ദിരാനഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.6386612,12.9783325,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Halasuru</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857552</value>
+			</Data>
+			<Data name="code">
+				<value>HLRU</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Halasuru</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಹಲಸೂರು</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ഹലസുരു</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.62668600000001,12.9764992,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Trinity</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857553</value>
+			</Data>
+			<Data name="code">
+				<value>TTY</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Trinity</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಟ್ರಿನಿಟಿ ಮೆಟ್ರೊ ನಿಲ್ದಾಣ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ട്രിനിറ്റി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.6170205,12.9730218,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mahatma Gandhi Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857554</value>
+			</Data>
+			<Data name="alt_name">
+				<value>Plaza Theatre Metro Station</value>
+			</Data>
+			<Data name="code">
+				<value>MAGR</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Mahatma Gandhi Road</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮಹಾತ್ಮ ಗಾಂಧಿ ರಸ್ತೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മഹാത്മാഗാന്ധി റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="short_name">
+				<value>MG Road</value>
+			</Data>
+			<Data name="start_date">
+				<value>20-10-2011</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikidata">
+				<value>Q5539354</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Mahatma Gandhi Road metro station (Bangalore)</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.60679020000001,12.9755264,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Cubbon Park</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857555</value>
+			</Data>
+			<Data name="code">
+				<value>CBPK</value>
+			</Data>
+			<Data name="name">
+				<value>Cubbon Park</value>
+			</Data>
+			<Data name="name:etymology:wikidata">
+				<value>Q6767214</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕಬ್ಬನ್ ಪಾರ್ಕ್</value>
+			</Data>
+			<Data name="name:ml">
+				<value>കബ്ബൺ പാർക്ക്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="tunnel">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5975756,12.9809575,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dr. B R Ambedkar Station, Vidhana Soudha</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857556</value>
+			</Data>
+			<Data name="code">
+				<value>VDSA</value>
+			</Data>
+			<Data name="name">
+				<value>Dr. B R Ambedkar Station, Vidhana Soudha</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಡಾ.ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಠಾಣೆ, ವಿಧಾನಸೌಧ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ഡോ.ബി.ആർ. അംബേദ്കർ സ്റ്റേഷൻ, വിധാന സൗധ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="tunnel">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5916385,12.9787419,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sir M Vishweshwariah - Central College</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857557</value>
+			</Data>
+			<Data name="alt_name">
+				<value>Central College</value>
+			</Data>
+			<Data name="code">
+				<value>VSWA</value>
+			</Data>
+			<Data name="name">
+				<value>Sir M Vishweshwariah - Central College</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಸರ್ ಎಂ ವಿಶ್ವೇಶ್ವರಯ್ಯ - ಸೆಂಟ್ರಲ್ ಕಾಲೇಜು</value>
+			</Data>
+			<Data name="name:ml">
+				<value>സർ എം വിശ്വേശ്വരയ്യ - സെൻട്രൽ കോളേജ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="tunnel">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.58422,12.9745197,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nadaprabhu Kempegowda Station, Majestic</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857558</value>
+			</Data>
+			<Data name="code">
+				<value>KGWA</value>
+			</Data>
+			<Data name="level">
+				<value>-2;-1;0</value>
+			</Data>
+			<Data name="name">
+				<value>Nadaprabhu Kempegowda Station, Majestic</value>
+			</Data>
+			<Data name="name:etymology:wikidata">
+				<value>Q6387049</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ನಾಡಪ್ರಭು ಕೆಂಪೇಗೌಡ ನಿಲ್ದಾಣ, ಮೆಜೆಸ್ಟಿಕ್</value>
+			</Data>
+			<Data name="name:ml">
+				<value>നാടപ്രഭു കെമ്പഗൗഡ സ്റ്റേഷൻ, മജസ്റ്റിക്</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+			<Data name="wikidata">
+				<value>Q6737727</value>
+			</Data>
+			<Data name="wikipedia">
+				<value>en:Majestic metro station</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5728757,12.9757079,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Krantivira Sangolli Rayanna</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857559</value>
+			</Data>
+			<Data name="code">
+				<value>BRCS</value>
+			</Data>
+			<Data name="name">
+				<value>Krantivira Sangolli Rayanna</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕ್ರಾಂತಿವೀರ ಸಂಗೊಳ್ಳಿ ರಾಯಣ್ಣ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ക്രാന്തിവീര സങ്കൊല്ലി രായണ്ണ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5653767,12.9758768,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Magadi Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857560</value>
+			</Data>
+			<Data name="code">
+				<value>MIRD</value>
+			</Data>
+			<Data name="name">
+				<value>Magadi Road</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮಾಗಡಿ ರಸ್ತೆ ಮೆಟ್ರೊ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മാഗഡി റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5553523,12.975632,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sri Balagangadaranatha Swamy, Hosahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857561</value>
+			</Data>
+			<Data name="code">
+				<value>HSLI</value>
+			</Data>
+			<Data name="name">
+				<value>Sri Balagangadaranatha Swamy, Hosahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಶ್ರೀ ಬಾಲಗಂಗಾಧರನಾಥ ಮೆಟ್ರೋ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ശ്രീ ബാലഗംഗാധരനാഥ സ്വാമി, ഹൊസഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5456215,12.9742933,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Vijayanagara</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857562</value>
+			</Data>
+			<Data name="code">
+				<value>VJNR</value>
+			</Data>
+			<Data name="name">
+				<value>Vijayanagara</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ವಿಜಯನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>വിജയനഗര</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5374044,12.9709559,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Attiguppe</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857563</value>
+			</Data>
+			<Data name="code">
+				<value>AGPP</value>
+			</Data>
+			<Data name="name">
+				<value>Attiguppe</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಅತ್ತಿಗುಪ್ಪೆ ಮೆಟ್ರೋ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>അത്തിഗുപ്പെ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5335788,12.9618931,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Deepanjali Nagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857564</value>
+			</Data>
+			<Data name="code">
+				<value>DJNR</value>
+			</Data>
+			<Data name="name">
+				<value>Deepanjali Nagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ದೀಪಾಂಜಲಿ ನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ദീപാഞ്ജലി നഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.53701220000001,12.9520578,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mysore Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6400857565</value>
+			</Data>
+			<Data name="code">
+				<value>MYRD</value>
+			</Data>
+			<Data name="name">
+				<value>Mysore Road</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮೈಸೂರು ರಸ್ತೆ ಮೆಟ್ರೋ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മൈസൂർ റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5301588,12.9467183,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mantri Square Sampige Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706688</value>
+			</Data>
+			<Data name="code">
+				<value>SPGD</value>
+			</Data>
+			<Data name="name">
+				<value>Mantri Square Sampige Road</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮಂತ್ರಿ ಸ್ಕ್ವೇರ್ ಸಂಪಿಗೆ ರಸ್ತೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മന്ത്രി സ്ക്വയർ സമ്പിഗെ റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5707293,12.9904629,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mahakavi Kuvempu Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706689</value>
+			</Data>
+			<Data name="code">
+				<value>KVPR</value>
+			</Data>
+			<Data name="name">
+				<value>Mahakavi Kuvempu Road</value>
+			</Data>
+			<Data name="name:etymology:wikidata">
+				<value>Q3351108</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮಹಾಕವಿ ಕುವೆಂಪು ರಸ್ತೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മഹാകവി കുവെമ്പു റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5568986,12.9985297,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Rajajinagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706690</value>
+			</Data>
+			<Data name="code">
+				<value>RJNR</value>
+			</Data>
+			<Data name="name">
+				<value>Rajajinagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ರಾಜಾಜಿನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>രാജാജിനഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.54965679999999,13.0005247,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mahalakshmi</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706691</value>
+			</Data>
+			<Data name="code">
+				<value>MHLI</value>
+			</Data>
+			<Data name="name">
+				<value>Mahalakshmi</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಮಹಾಲಕ್ಷ್ಮಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>മഹാലക്ഷ്മി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5487134,13.0080952,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sandal Soap Factory</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706692</value>
+			</Data>
+			<Data name="code">
+				<value>SSFY</value>
+			</Data>
+			<Data name="name">
+				<value>Sandal Soap Factory</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಸಾಂಡಲ್ ಸೋಪ್ ಕಾರ್ಖಾನೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>സാൻഡൽ സോപ്പ് ഫാക്ടറി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.55398390000001,13.0146544,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Goraguntepalya</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706694</value>
+			</Data>
+			<Data name="code">
+				<value>YPI</value>
+			</Data>
+			<Data name="name">
+				<value>Goraguntepalya</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಗೊರಗುಂಟೆಪಾಳ್ಯ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ഗോരഗുണ്ടെപാൾയ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5408961,13.0284078,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Peenya</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706695</value>
+			</Data>
+			<Data name="code">
+				<value>PEYA</value>
+			</Data>
+			<Data name="name">
+				<value>Peenya</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಪೀಣ್ಯ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>പീണ്യ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.53320100000001,13.0330189,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Peenya Industry</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6410706696</value>
+			</Data>
+			<Data name="code">
+				<value>PYID</value>
+			</Data>
+			<Data name="name">
+				<value>Peenya Industry</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಪೀಣ್ಯ ಇಂಡಸ್ಟ್ರಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>പീണ്യ ഇൻഡസ്ട്രി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5254924,13.0363176,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Yelachenahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710292</value>
+			</Data>
+			<Data name="code">
+				<value>PUTH</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Yelachenahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಯಲಚೇನಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>യലച്ചേനഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5701194,12.8960498,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>J P Nagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710293</value>
+			</Data>
+			<Data name="code">
+				<value>JPN</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>J P Nagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಜೆಪಿ ನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ജെ പി നഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5731279,12.9074747,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Banashankari</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710294</value>
+			</Data>
+			<Data name="code">
+				<value>BSNK</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Banashankari</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಬನಶಂಕರಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ബനശങ്കരി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.573598,12.9152208,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Rashtriya Vidyalaya Road</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710295</value>
+			</Data>
+			<Data name="code">
+				<value>RVR</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Rashtriya Vidyalaya Road</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ರಾಷ್ಟ್ರೀಯ ವಿದ್ಯಾಲಯ ರಸ್ತೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>രാഷ്ട്രീയ വിദ്യാലയ റോഡ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5802295,12.9213258,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jayanagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710296</value>
+			</Data>
+			<Data name="code">
+				<value>JYN</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Jayanagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಜಯನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ജയനഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5801439,12.9295069,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>South End Circle</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710297</value>
+			</Data>
+			<Data name="code">
+				<value>SECE</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>South End Circle</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ತಿ.ನಂ.ಶ್ರೀ ವೃತ್ತ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>സൗത്ത് എൻഡ് സർക്കിൾ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.58005559999999,12.9382573,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Lalbagh</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710298</value>
+			</Data>
+			<Data name="code">
+				<value>LBGH</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Lalbagh</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಲಾಲ್ ಬಾಗ್</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ലാൽബാഗ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.580016,12.9465265,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>National College</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710299</value>
+			</Data>
+			<Data name="code">
+				<value>NLC</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>National College</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ನ್ಯಾಶನಲ್ ಕಾಲೇಜು</value>
+			</Data>
+			<Data name="name:ml">
+				<value>നാഷണൽ കോളേജ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5736794,12.9505161,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Krishna Rajendra Market</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710300</value>
+			</Data>
+			<Data name="code">
+				<value>KRMT</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Krishna Rajendra Market</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕೃಷ್ಣರಾಜೇಂದ್ರ ಮಾರುಕಟ್ಟೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>കൃഷ്ണ രാജേന്ദ്ര മാർക്കറ്റ്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="tunnel">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5746578,12.9608788,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Chikkapete</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/6432710301</value>
+			</Data>
+			<Data name="code">
+				<value>CKPE</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Chikkapete</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಚಿಕ್ಕಪೇಟೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ചിക്കപ്പേട്ട</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="tunnel">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5745663,12.9668935,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jnana Bharathi</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9049846515</value>
+			</Data>
+			<Data name="code">
+				<value>BGUC</value>
+			</Data>
+			<Data name="name">
+				<value>Jnana Bharathi</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಜ್ಞಾನ ಭಾರತಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ജ്ഞാന ഭാരതി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.51240629999999,12.9354357,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nayandahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9050797592</value>
+			</Data>
+			<Data name="code">
+				<value>NYHM</value>
+			</Data>
+			<Data name="name">
+				<value>Nayandahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ನಾಯಂಡಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>നായണ്ടഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5251166,12.9416715,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kengeri Bus Terminal</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9051395755</value>
+			</Data>
+			<Data name="code">
+				<value>MLSD</value>
+			</Data>
+			<Data name="name">
+				<value>Kengeri Bus Terminal</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕೆಂಗೇರಿ ಬಸ್ ಟರ್ಮಿನಲ್</value>
+			</Data>
+			<Data name="name:ml">
+				<value>കെങ്കേരി ബസ് ടെർമിനൽ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.4878557,12.914689,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kengeri</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9051405243</value>
+			</Data>
+			<Data name="code">
+				<value>KGIT</value>
+			</Data>
+			<Data name="name">
+				<value>Kengeri</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕೆಂಗೇರಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>കെങ്കേരി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.47657839999999,12.9079105,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Rajarajeshwari Nagar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9051410519</value>
+			</Data>
+			<Data name="code">
+				<value>RRRN</value>
+			</Data>
+			<Data name="name">
+				<value>Rajarajeshwari Nagar</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ರಾಜರಾಜೇಶ್ವರಿ ನಗರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>രാജരാജേശ്വരി നഗർ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.51967879999999,12.9365996,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Pattanagere</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9051417969</value>
+			</Data>
+			<Data name="code">
+				<value>PATG</value>
+			</Data>
+			<Data name="name">
+				<value>Pattanagere</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಪಟ್ಟಣಗೆರೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>പട്ടനഗരെ</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.49835090000001,12.9242505,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Silk Institute</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9919651773</value>
+			</Data>
+			<Data name="code">
+				<value>APTS</value>
+			</Data>
+			<Data name="name">
+				<value>Silk Institute</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ರೇಷ್ಮೆ ಸಂಸ್ಥೆ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>സിൽക്ക് ഇൻസ്റ്റിറ്റ്യൂട്ട്</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5299545,12.8617298,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Thalaghattapura</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9919651774</value>
+			</Data>
+			<Data name="code">
+				<value>TGTP</value>
+			</Data>
+			<Data name="name">
+				<value>Thalaghattapura</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ತಲಘಟ್ಟಪುರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>തലഘട്ടപുര</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5383958,12.8714097,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Vajarahalli</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9919651775</value>
+			</Data>
+			<Data name="code">
+				<value>VJRH</value>
+			</Data>
+			<Data name="name">
+				<value>Vajarahalli</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ವಾಜರಹಳ್ಳಿ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>വാജറഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.54474140000001,12.8774369,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Doddakallasandra</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9919651776</value>
+			</Data>
+			<Data name="code">
+				<value>KLPK</value>
+			</Data>
+			<Data name="name">
+				<value>Doddakallasandra</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ದೊಡ್ಡಕಲ್ಲಸಂದ್ರ</value>
+			</Data>
+			<Data name="name:ml">
+				<value>ദൊഡ്ഡകല്ലസന്ദ്ര</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.5527546,12.8846435,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Konanakunte Cross</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<ExtendedData>
+			<Data name="@id">
+				<value>node/9919651777</value>
+			</Data>
+			<Data name="code">
+				<value>APRC</value>
+			</Data>
+			<Data name="layer">
+				<value>1</value>
+			</Data>
+			<Data name="lit">
+				<value>yes</value>
+			</Data>
+			<Data name="name">
+				<value>Konanakunte Cross</value>
+			</Data>
+			<Data name="name:kn">
+				<value>ಕೋಣನಕುಂಟೆ ಕ್ರಾಸ್</value>
+			</Data>
+			<Data name="name:ml">
+				<value>യലച്ചേനഹള്ളി</value>
+			</Data>
+			<Data name="network">
+				<value>Namma Metro</value>
+			</Data>
+			<Data name="operator">
+				<value>BMRCL</value>
+			</Data>
+			<Data name="platforms">
+				<value>2</value>
+			</Data>
+			<Data name="public_transport">
+				<value>station</value>
+			</Data>
+			<Data name="public_transport:version">
+				<value>2</value>
+			</Data>
+			<Data name="railway">
+				<value>station</value>
+			</Data>
+			<Data name="shelter">
+				<value>yes</value>
+			</Data>
+			<Data name="station">
+				<value>subway</value>
+			</Data>
+			<Data name="subway">
+				<value>yes</value>
+			</Data>
+			<Data name="website">
+				<value>https://english.brmc.co.in</value>
+			</Data>
+			<Data name="wheelchair">
+				<value>yes</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.56266650000001,12.8889671,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Yeshwanthapura</name>
+		<LookAt>
+			<longitude>77.55444092142432</longitude>
+			<latitude>13.02136817485202</latitude>
+			<altitude>0</altitude>
+			<heading>-0.3030227640723876</heading>
+			<tilt>12.26782841105788</tilt>
+			<range>2236.495429380332</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.54989340981854,13.02327288918433,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

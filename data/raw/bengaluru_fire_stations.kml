@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="clipped" id="clipped">
+	<SimpleField name="OBJECTID" type="float"></SimpleField>
+	<SimpleField name="KGISCode" type="string"></SimpleField>
+	<SimpleField name="DepartmentCode" type="string"></SimpleField>
+	<SimpleField name="KGISVillageID" type="float"></SimpleField>
+	<SimpleField name="KGISWardID" type="string"></SimpleField>
+	<SimpleField name="KGISFIRE_STAID" type="int"></SimpleField>
+	<SimpleField name="FIRE_STAName" type="string"></SimpleField>
+</Schema>
+<Folder><name>clipped</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">142</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0001</SimpleData>
+		<SimpleData name="DepartmentCode">142</SimpleData>
+		<SimpleData name="KGISVillageID">15684</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">142</SimpleData>
+		<SimpleData name="FIRE_STAName">Anjanapura Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5632669998641,12.859067000178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">143</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0002</SimpleData>
+		<SimpleData name="DepartmentCode">143</SimpleData>
+		<SimpleData name="KGISVillageID">15721</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">143</SimpleData>
+		<SimpleData name="FIRE_STAName">Banashanakari Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5619950001617,12.922951999756</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">144</SimpleData>
+		<SimpleData name="KGISCode">29572055436130580000HMFESUNSCRFIS0001</SimpleData>
+		<SimpleData name="DepartmentCode">144</SimpleData>
+		<SimpleData name="KGISVillageID">15514</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">144</SimpleData>
+		<SimpleData name="FIRE_STAName">Electronics City Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6626951598893,12.8355330002137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">145</SimpleData>
+		<SimpleData name="KGISCode">29572055458031630000HMFESUNSCRFIS0001</SimpleData>
+		<SimpleData name="DepartmentCode">145</SimpleData>
+		<SimpleData name="KGISVillageID">21159</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">145</SimpleData>
+		<SimpleData name="FIRE_STAName">Anekal Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6927930004421,12.7249859997302</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">146</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0003</SimpleData>
+		<SimpleData name="DepartmentCode">146</SimpleData>
+		<SimpleData name="KGISVillageID">15437</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">146</SimpleData>
+		<SimpleData name="FIRE_STAName">Yelahanka Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6009479997117,13.1251330004255</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">148</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0004</SimpleData>
+		<SimpleData name="DepartmentCode">148</SimpleData>
+		<SimpleData name="KGISVillageID">15520</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">148</SimpleData>
+		<SimpleData name="FIRE_STAName">Hulimavu Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5987909601949,12.8722635013209</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">149</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0005</SimpleData>
+		<SimpleData name="DepartmentCode">149</SimpleData>
+		<SimpleData name="KGISVillageID">15491</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">149</SimpleData>
+		<SimpleData name="FIRE_STAName">Peenya Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5206689999362,13.028053000353</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">151</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0006</SimpleData>
+		<SimpleData name="DepartmentCode">151</SimpleData>
+		<SimpleData name="KGISVillageID">15115</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">151</SimpleData>
+		<SimpleData name="FIRE_STAName">Rajajinagara Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5486169997517,12.9804729998742</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">152</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0007</SimpleData>
+		<SimpleData name="DepartmentCode">152</SimpleData>
+		<SimpleData name="KGISVillageID">21465</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">152</SimpleData>
+		<SimpleData name="FIRE_STAName">Sarjapur Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6737449000677,12.9168625998515</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">153</SimpleData>
+		<SimpleData name="KGISCode">29572055436129650000HMFESUNSCRFIS0001</SimpleData>
+		<SimpleData name="DepartmentCode">153</SimpleData>
+		<SimpleData name="KGISVillageID">15620</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">153</SimpleData>
+		<SimpleData name="FIRE_STAName">Sunkadakatte Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.4216507378574,12.9742115158572</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">154</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0008</SimpleData>
+		<SimpleData name="DepartmentCode">154</SimpleData>
+		<SimpleData name="KGISVillageID">30092</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">154</SimpleData>
+		<SimpleData name="FIRE_STAName">Bengaluru South Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6108600004574,12.9724090004274</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">156</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0009</SimpleData>
+		<SimpleData name="DepartmentCode">156</SimpleData>
+		<SimpleData name="KGISVillageID">21394</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">156</SimpleData>
+		<SimpleData name="FIRE_STAName">Mahadevapura Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.7026689999322,12.9985899999803</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">166</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0010</SimpleData>
+		<SimpleData name="DepartmentCode">166</SimpleData>
+		<SimpleData name="KGISVillageID">30092</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">166</SimpleData>
+		<SimpleData name="FIRE_STAName">Bengaluru Secretariat Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5890869999081,12.9777659002955</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">167</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0011</SimpleData>
+		<SimpleData name="DepartmentCode">167</SimpleData>
+		<SimpleData name="KGISVillageID">21427</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">167</SimpleData>
+		<SimpleData name="FIRE_STAName">Whitefield Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.7326397279664,12.9873559880069</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">168</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0012</SimpleData>
+		<SimpleData name="DepartmentCode">168</SimpleData>
+		<SimpleData name="KGISVillageID">15577</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">168</SimpleData>
+		<SimpleData name="FIRE_STAName">Nagarabhavi Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.509924953498,12.9355274831777</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">169</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0013</SimpleData>
+		<SimpleData name="DepartmentCode">169</SimpleData>
+		<SimpleData name="KGISVillageID">15081</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">169</SimpleData>
+		<SimpleData name="FIRE_STAName">Bengaluru North Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5630824003806,12.9625257211168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">211</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0014</SimpleData>
+		<SimpleData name="DepartmentCode">211</SimpleData>
+		<SimpleData name="KGISVillageID">15680</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">211</SimpleData>
+		<SimpleData name="FIRE_STAName">Jayanagara Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6008544597293,12.9351812793424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">213</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0015</SimpleData>
+		<SimpleData name="DepartmentCode">213</SimpleData>
+		<SimpleData name="KGISVillageID">15480</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">213</SimpleData>
+		<SimpleData name="FIRE_STAName">Yeshawanthapura Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5497576662169,13.0225579969286</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">214</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0016</SimpleData>
+		<SimpleData name="DepartmentCode">214</SimpleData>
+		<SimpleData name="KGISVillageID">15146</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">214</SimpleData>
+		<SimpleData name="FIRE_STAName">Hebbal Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6181394945348,13.0484551882918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">215</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0017</SimpleData>
+		<SimpleData name="DepartmentCode">215</SimpleData>
+		<SimpleData name="KGISVillageID">30092</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">215</SimpleData>
+		<SimpleData name="FIRE_STAName">Bengaluru High Grounds Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.5803038729397,12.9807227206849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#clipped">
+		<SimpleData name="OBJECTID">216</SimpleData>
+		<SimpleData name="KGISCode">29572055428031620000HMFESUNSCRFIS0018</SimpleData>
+		<SimpleData name="DepartmentCode">216</SimpleData>
+		<SimpleData name="KGISVillageID">21404</SimpleData>
+		<SimpleData name="KGISWardID"></SimpleData>
+		<SimpleData name="KGISFIRE_STAID">216</SimpleData>
+		<SimpleData name="FIRE_STAName">Banasawadi Fire Station</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>77.6459202769109,13.0115642689608</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

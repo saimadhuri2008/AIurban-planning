@@ -1,0 +1,7 @@
+2025-11-10 18:06:42,440 - [INFO] - Timestamps generated: 2025-11-09 18:00:00+05:30 -> 2025-11-10 17:30:00+05:30 (48 steps)
+2025-11-10 18:06:42,440 - [INFO] - Generated 61 H3 cells at res=8
+2025-11-10 18:06:42,440 - [WARNING] - OWM API key not set. Will use mock seeds.
+2025-11-10 18:06:42,440 - [WARNING] - WAQI token not set. Will use mock seeds.
+2025-11-10 18:06:42,476 - [INFO] - Merging weather and AQI dataframes (inner join)...
+2025-11-10 18:06:42,488 - [INFO] - Saving combined temporal data to Parquet: c:\Users\jbhuv\OneDrive\Desktop\Urban-Planning\src\data_pipeline\..\..\data\temporal\temporal_data_h3_48h.parquet
+2025-11-10 18:06:43,942 - [INFO] - Temporal generation complete. Parquet: c:\Users\jbhuv\OneDrive\Desktop\Urban-Planning\src\data_pipeline\..\..\data\temporal\temporal_data_h3_48h.parquet  Metadata: c:\Users\jbhuv\OneDrive\Desktop\Urban-Planning\src\data_pipeline\..\..\data\temporal\temporal_metadata.json
