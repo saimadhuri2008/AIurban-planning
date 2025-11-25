@@ -1,0 +1,6 @@
+outs:
+- md5: 53568b3e465b62a2a2e433ebda1d39ca.dir
+  size: 4018661
+  nfiles: 12
+  hash: md5
+  path: statistical_analysis
