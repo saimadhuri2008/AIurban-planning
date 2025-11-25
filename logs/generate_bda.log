@@ -1,0 +1,51 @@
+2025-11-14 23:25:10,257 - INFO - === Starting BDA policy zone generation ===
+2025-11-14 23:25:10,257 - INFO - Inputs: boundary=data/spatial/boundary.geojson wards=data/spatial/wards_bengaluru_from_kml.geojson n_zones=8 do_h3=True h3_res=8
+2025-11-14 23:25:10,448 - INFO - Loaded boundary: data/spatial/boundary.geojson (features=101)
+2025-11-14 23:25:10,449 - INFO - Partitioning boundary into 8 radial zones...
+2025-11-14 23:25:10,641 - INFO - Created 8 radial zones.
+2025-11-14 23:25:10,815 - INFO - Spatial join with wards complete. Sample ward names: []
+2025-11-14 23:25:10,830 - INFO - h3 imported; version=4.3.1; available functions=['cell_to_latlng', 'geo_to_cells', 'polygon_to_cells', 'polygon_to_cells_experimental']
+2025-11-14 23:25:12,217 - INFO - Saved H3 aggregated parquet: data\policy\bda_policy_h3_res8.parquet
+2025-11-14 23:25:16,110 - INFO - Saved H3 centroids geojson: data\policy\bda_policy_h3_res8.geojson
+2025-11-14 23:25:16,111 - INFO - H3 diagnostics saved: data\policy\bda_h3_diag_20251114T232516.json
+2025-11-14 23:25:18,766 - INFO - Saved GeoJSON: data\policy\bda_masterplan_zones_20251114T232516.geojson
+2025-11-14 23:25:18,804 - INFO - Saved Parquet: data\policy\bda_masterplan_zones_20251114T232516.parquet
+2025-11-14 23:25:18,806 - INFO - Saved preview JSON: data\policy\bda_masterplan_zones_20251114T232516_preview.json
+2025-11-14 23:25:18,807 - INFO - Saved metadata: data\policy\bda_masterplan_zones_20251114T232516_metadata.json
+2025-11-14 23:25:18,807 - INFO - Saved policy outputs: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T232516.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T232516.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T232516_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T232516_metadata.json'}
+2025-11-14 23:25:18,807 - INFO - H3 outputs: {'parquet': 'data\\policy\\bda_policy_h3_res8.parquet', 'geojson': 'data\\policy\\bda_policy_h3_res8.geojson', 'diag': 'data\\policy\\bda_h3_diag_20251114T232516.json'}
+2025-11-14 23:25:18,807 - INFO - Pipeline complete. Outputs saved to: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T232516.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T232516.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T232516_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T232516_metadata.json'}
+2025-11-14 23:25:28,153 - INFO - === Starting BDA policy zone generation ===
+2025-11-14 23:25:28,153 - INFO - Inputs: boundary=data/spatial/boundary.geojson wards=data/spatial/wards_bengaluru_from_kml.geojson n_zones=8 do_h3=True h3_res=8
+2025-11-14 23:25:28,322 - INFO - Loaded boundary: data/spatial/boundary.geojson (features=101)
+2025-11-14 23:25:28,322 - INFO - Partitioning boundary into 8 radial zones...
+2025-11-14 23:25:28,519 - INFO - Created 8 radial zones.
+2025-11-14 23:25:28,692 - INFO - Spatial join with wards complete. Sample ward names: []
+2025-11-14 23:25:28,707 - INFO - h3 imported; version=4.3.1; available functions=['cell_to_latlng', 'geo_to_cells', 'polygon_to_cells', 'polygon_to_cells_experimental']
+2025-11-14 23:25:30,035 - INFO - Saved H3 aggregated parquet: data\policy\bda_policy_h3_res8.parquet
+2025-11-14 23:25:34,276 - INFO - Saved H3 centroids geojson: data\policy\bda_policy_h3_res8.geojson
+2025-11-14 23:25:34,277 - INFO - H3 diagnostics saved: data\policy\bda_h3_diag_20251114T232534.json
+2025-11-14 23:25:36,877 - INFO - Saved GeoJSON: data\policy\bda_masterplan_zones_20251114T232534.geojson
+2025-11-14 23:25:36,942 - INFO - Saved Parquet: data\policy\bda_masterplan_zones_20251114T232534.parquet
+2025-11-14 23:25:36,945 - INFO - Saved preview JSON: data\policy\bda_masterplan_zones_20251114T232534_preview.json
+2025-11-14 23:25:36,945 - INFO - Saved metadata: data\policy\bda_masterplan_zones_20251114T232534_metadata.json
+2025-11-14 23:25:36,946 - INFO - Saved policy outputs: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T232534.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T232534.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T232534_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T232534_metadata.json'}
+2025-11-14 23:25:36,946 - INFO - H3 outputs: {'parquet': 'data\\policy\\bda_policy_h3_res8.parquet', 'geojson': 'data\\policy\\bda_policy_h3_res8.geojson', 'diag': 'data\\policy\\bda_h3_diag_20251114T232534.json'}
+2025-11-14 23:25:36,947 - INFO - Pipeline complete. Outputs saved to: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T232534.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T232534.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T232534_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T232534_metadata.json'}
+2025-11-14 23:34:13,423 - INFO - === Starting BDA policy zone generation ===
+2025-11-14 23:34:13,423 - INFO - Inputs: boundary=data/spatial/boundary.geojson wards=data/spatial/wards_bengaluru_from_kml.geojson n_zones=8 do_h3=True h3_res=8
+2025-11-14 23:34:13,599 - INFO - Loaded boundary: data/spatial/boundary.geojson (features=101)
+2025-11-14 23:34:13,599 - INFO - Partitioning boundary into 8 radial zones...
+2025-11-14 23:34:13,800 - INFO - Created 8 radial zones.
+2025-11-14 23:34:13,974 - INFO - Spatial join with wards complete. Sample ward names: []
+2025-11-14 23:34:13,987 - INFO - h3 imported; version=4.3.1; available functions=['cell_to_latlng', 'geo_to_cells', 'polygon_to_cells', 'polygon_to_cells_experimental']
+2025-11-14 23:34:15,304 - INFO - Saved H3 aggregated parquet: data\policy\bda_policy_h3_res8.parquet
+2025-11-14 23:34:19,119 - INFO - Saved H3 centroids geojson: data\policy\bda_policy_h3_res8.geojson
+2025-11-14 23:34:19,120 - INFO - H3 diagnostics saved: data\policy\bda_h3_diag_20251114T233419.json
+2025-11-14 23:34:21,775 - INFO - Saved GeoJSON: data\policy\bda_masterplan_zones_20251114T233419.geojson
+2025-11-14 23:34:21,811 - INFO - Saved Parquet: data\policy\bda_masterplan_zones_20251114T233419.parquet
+2025-11-14 23:34:21,813 - INFO - Saved preview JSON: data\policy\bda_masterplan_zones_20251114T233419_preview.json
+2025-11-14 23:34:21,814 - INFO - Saved metadata: data\policy\bda_masterplan_zones_20251114T233419_metadata.json
+2025-11-14 23:34:21,814 - INFO - Saved policy outputs: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T233419.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T233419.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T233419_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T233419_metadata.json'}
+2025-11-14 23:34:21,814 - INFO - H3 outputs: {'parquet': 'data\\policy\\bda_policy_h3_res8.parquet', 'geojson': 'data\\policy\\bda_policy_h3_res8.geojson', 'diag': 'data\\policy\\bda_h3_diag_20251114T233419.json'}
+2025-11-14 23:34:21,815 - INFO - Pipeline complete. Outputs saved to: {'geojson': 'data\\policy\\bda_masterplan_zones_20251114T233419.geojson', 'parquet': 'data\\policy\\bda_masterplan_zones_20251114T233419.parquet', 'preview': 'data\\policy\\bda_masterplan_zones_20251114T233419_preview.json', 'metadata': 'data\\policy\\bda_masterplan_zones_20251114T233419_metadata.json'}
