@@ -1,0 +1,5 @@
+outs:
+- md5: 57fe9982585860dd225299512f39ae35
+  size: 889025
+  hash: md5
+  path: wards_master.parquet

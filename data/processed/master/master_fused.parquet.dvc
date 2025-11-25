@@ -1,0 +1,5 @@
+outs:
+- md5: 33f6cc6182c4561c36f74489aa53c10c
+  size: 153712
+  hash: md5
+  path: master_fused.parquet

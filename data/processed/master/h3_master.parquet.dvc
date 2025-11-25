@@ -1,0 +1,5 @@
+outs:
+- md5: 300eeb3c94fc51e113917db8ba74597c
+  size: 100205
+  hash: md5
+  path: h3_master.parquet
