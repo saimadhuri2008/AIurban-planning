@@ -9,22 +9,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Ignore all large data folders
-data/interim/
-data/processed/
-data/raw/
-cache/
-*.geojson
-*.osm
-*.pbf
-*.kml
-*.csv
-*.json
-*.tif
-*.parquet
-*.gpkg
-*.shp
-
+# Ignore specific huge data files
 data/interim/buildings/buildings_bengaluru_final.geojson
 data/interim/bengaluru.osm
 data/processed/buildings/buildings_processed.csv
