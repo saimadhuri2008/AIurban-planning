@@ -24,3 +24,7 @@ cache/
 *.parquet
 *.gpkg
 *.shp
+
+data/interim/buildings/buildings_bengaluru_final.geojson
+data/interim/bengaluru.osm
+data/processed/buildings/buildings_processed.csv
