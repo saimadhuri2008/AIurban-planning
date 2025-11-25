@@ -1,0 +1,199 @@
+boundary_index,method,matched_ward_num,matched_ward_name,score
+76,spatial_greedy_nearest_city_median,1,Kempegowda Ward,50
+65,spatial_greedy_nearest_city_median,2,Chowdeswari Ward,50
+77,spatial_greedy_nearest_city_median,3,Atturu,50
+128,spatial_greedy_nearest_city_median,4,Yelahanka Satellite Town,50
+79,spatial_greedy_nearest_city_median,5,Jakkuru,50
+63,spatial_greedy_nearest_city_median,6,Thanisandra,50
+72,spatial_greedy_nearest_city_median,7,Byatarayanapura,50
+90,spatial_greedy_nearest_city_median,8,Kodigehalli,50
+75,spatial_greedy_nearest_city_median,9,Vidyaranyapura,50
+94,spatial_greedy_nearest_city_median,10,Dodda Bommasandra,50
+95,spatial_greedy_nearest_city_median,11,Kuvempu Nagar,50
+78,spatial_greedy_nearest_city_median,12,Shettihalli,50
+133,spatial_greedy_nearest_city_median,13,Mallasandra,50
+89,spatial_greedy_nearest_city_median,14,Bagalakunte,50
+205,spatial_greedy_nearest_city_median,15,T Dasarahalli,50
+39,spatial_greedy_nearest_city_median,16,Jalahalli,50
+81,spatial_greedy_nearest_city_median,17,J P Park,50
+91,spatial_greedy_nearest_city_median,18,Radhakrishna Temple Ward,50
+40,spatial_greedy_nearest_city_median,19,Sanjaya Nagar,50
+82,spatial_greedy_nearest_city_median,20,Ganga Nagar,50
+99,spatial_greedy_nearest_city_median,21,Hebbala,50
+203,spatial_greedy_nearest_city_median,22,Vishwanath Nagenahalli,50
+129,spatial_greedy_nearest_city_median,23,Nagavara,50
+102,spatial_greedy_nearest_city_median,24,HBR Layout,50
+96,spatial_greedy_nearest_city_median,25,Horamavu,50
+188,spatial_greedy_nearest_city_median,26,Ramamurthy Nagar,50
+204,spatial_greedy_nearest_city_median,27,Banasavadi,50
+130,spatial_greedy_nearest_city_median,28,Kammanahalli,50
+127,spatial_greedy_nearest_city_median,29,Kacharkanahalli,50
+85,spatial_greedy_nearest_city_median,30,Kadugondanahalli,50
+131,spatial_greedy_nearest_city_median,31,Kushal Nagar,50
+98,spatial_greedy_nearest_city_median,32,Kaval Bairasandra,50
+71,spatial_greedy_nearest_city_median,33,Manorayanapalya,50
+73,spatial_greedy_nearest_city_median,34,Gangenahalli,50
+137,spatial_greedy_nearest_city_median,35,Aramane Nagara,50
+100,spatial_greedy_nearest_city_median,36,Mattikere,50
+92,spatial_greedy_nearest_city_median,37,Yeshwanthpura,50
+138,spatial_greedy_nearest_city_median,38,HMT Ward,50
+38,spatial_greedy_nearest_city_median,39,Chokkasandra,50
+190,spatial_greedy_nearest_city_median,40,Dodda Bidarakallu,50
+46,spatial_greedy_nearest_city_median,41,Peenya Industrial Area,50
+206,spatial_greedy_nearest_city_median,42,Lakshmi Devi Nagar,50
+125,spatial_greedy_nearest_city_median,43,Nandini Layout,50
+74,spatial_greedy_nearest_city_median,44,Marappana Palya,50
+43,spatial_greedy_nearest_city_median,45,Malleswaram,50
+104,spatial_greedy_nearest_city_median,46,Jayachamarajendra  Nagar,50
+83,spatial_greedy_nearest_city_median,47,Devara Jeevanahalli,50
+195,spatial_greedy_nearest_city_median,48,Muneshwara Nagar,50
+168,spatial_greedy_nearest_city_median,49,Lingarajapura,50
+173,spatial_greedy_nearest_city_median,50,Benniganahalli,50
+199,spatial_greedy_nearest_city_median,51,Vijnanapura,50
+103,spatial_greedy_nearest_city_median,52,K R Puram,50
+136,spatial_greedy_nearest_city_median,53,Basavanapura,50
+194,spatial_greedy_nearest_city_median,54,Hudi,50
+97,spatial_greedy_nearest_city_median,55,Devasandra,50
+9,spatial_greedy_nearest_city_median,56,A Narayanapura,50
+167,spatial_greedy_nearest_city_median,57,C V Raman Nagar,50
+101,spatial_greedy_nearest_city_median,58,New Tippasandara,50
+88,spatial_greedy_nearest_city_median,59,Maruthi Seva Nagar,50
+84,spatial_greedy_nearest_city_median,60,Sagayarapuram,50
+45,spatial_greedy_nearest_city_median,61,S K Garden,50
+196,spatial_greedy_nearest_city_median,62,Ramaswamy Palya,50
+189,spatial_greedy_nearest_city_median,63,Jayamahal,50
+219,spatial_greedy_nearest_city_median,64,Rajamahal Guttahalli,50
+174,spatial_greedy_nearest_city_median,65,Kadu Malleshwar Ward,50
+32,spatial_greedy_nearest_city_median,66,Subramanya Nagar,50
+37,spatial_greedy_nearest_city_median,67,Nagapura,50
+36,spatial_greedy_nearest_city_median,68,Mahalakshimpuram,50
+105,spatial_greedy_nearest_city_median,69,Laggere,50
+23,spatial_greedy_nearest_city_median,70,Rajagopal Nagar,50
+42,spatial_greedy_nearest_city_median,71,Hegganahalli,50
+202,spatial_greedy_nearest_city_median,72,Herohalli,50
+197,spatial_greedy_nearest_city_median,73,Kottegepalya,50
+191,spatial_greedy_nearest_city_median,74,Shakthi Ganapathi Nagar,50
+29,spatial_greedy_nearest_city_median,75,Shankar Matt,50
+161,spatial_greedy_nearest_city_median,76,Gayithri Nagar,50
+141,spatial_greedy_nearest_city_median,77,Dattatreya Temple,50
+175,spatial_greedy_nearest_city_median,78,Pulikeshinagar,50
+217,spatial_greedy_nearest_city_median,79,Sarvagna Nagar,50
+66,spatial_greedy_nearest_city_median,80,Hoysala Nagar,50
+28,spatial_greedy_nearest_city_median,81,Vijnana Nagar,50
+59,spatial_greedy_nearest_city_median,82,Garudachar Playa,50
+86,spatial_greedy_nearest_city_median,83,Kadugodi,50
+87,spatial_greedy_nearest_city_median,84,Hagadur,50
+198,spatial_greedy_nearest_city_median,85,Dodda Nekkundi,50
+61,spatial_greedy_nearest_city_median,86,Marathahalli,50
+182,spatial_greedy_nearest_city_median,87,HAL Airport,50
+44,spatial_greedy_nearest_city_median,88,Jeevanbhima Nagar,50
+62,spatial_greedy_nearest_city_median,89,Jogupalya,50
+12,spatial_greedy_nearest_city_median,90,Halsoor,50
+221,spatial_greedy_nearest_city_median,91,Bharathi Nagar,50
+69,spatial_greedy_nearest_city_median,92,Shivaji Nagar,50
+200,spatial_greedy_nearest_city_median,93,Vasanth Nagar,50
+172,spatial_greedy_nearest_city_median,94,Gandhinagar,50
+201,spatial_greedy_nearest_city_median,95,Subhash Nagar,50
+207,spatial_greedy_nearest_city_median,96,Okalipuram,50
+154,spatial_greedy_nearest_city_median,97,Dayananda Nagar,50
+120,spatial_greedy_nearest_city_median,98,Prakash Nagar,50
+26,spatial_greedy_nearest_city_median,99,Rajaji Nagar,50
+31,spatial_greedy_nearest_city_median,100,Basaveshwara Nagar,50
+67,spatial_greedy_nearest_city_median,101,Kamakshipalya,50
+41,spatial_greedy_nearest_city_median,102,Vrisabhavathi Nagar,50
+192,spatial_greedy_nearest_city_median,103,Kaveripura,50
+143,spatial_greedy_nearest_city_median,104,Govindaraja Nagar,50
+170,spatial_greedy_nearest_city_median,105,Agrahara Dasarahalli,50
+106,spatial_greedy_nearest_city_median,106,Dr. Raj Kumar Ward,50
+57,spatial_greedy_nearest_city_median,107,Shivanagara,50
+169,spatial_greedy_nearest_city_median,108,Sriramamandir,50
+140,spatial_greedy_nearest_city_median,109,Chickpete,50
+60,spatial_greedy_nearest_city_median,110,Sampangiram Nagar,50
+27,spatial_greedy_nearest_city_median,111,Shantala Nagar,50
+108,spatial_greedy_nearest_city_median,112,Domlur,50
+160,spatial_greedy_nearest_city_median,113,Konena Agrahara,50
+20,spatial_greedy_nearest_city_median,114,Agaram,50
+80,spatial_greedy_nearest_city_median,115,Vannarpet,50
+171,spatial_greedy_nearest_city_median,116,Nilasandra,50
+178,spatial_greedy_nearest_city_median,117,Shanthi Nagar,50
+186,spatial_greedy_nearest_city_median,118,Sudham Nagara,50
+222,spatial_greedy_nearest_city_median,119,Dharmaraya Swamy Temple wa,50
+142,spatial_greedy_nearest_city_median,120,Cottonpete,50
+49,spatial_greedy_nearest_city_median,121,Binnipete,50
+187,spatial_greedy_nearest_city_median,122,Kempapura Agrahara,50
+58,spatial_greedy_nearest_city_median,123,Vijayanagar,50
+193,spatial_greedy_nearest_city_median,124,Hosahalli,50
+139,spatial_greedy_nearest_city_median,125,Marenahalli,50
+185,spatial_greedy_nearest_city_median,126,Maruthi Mandir ward,50
+6,spatial_greedy_nearest_city_median,127,Mudalapalya,50
+224,spatial_greedy_nearest_city_median,128,Nagarabhavi,50
+132,spatial_greedy_nearest_city_median,129,Jnana Bharathi ward,50
+68,spatial_greedy_nearest_city_median,130,Ullalu,50
+52,spatial_greedy_nearest_city_median,131,Nayandahalli,50
+13,spatial_greedy_nearest_city_median,132,Attiguppe,50
+11,spatial_greedy_nearest_city_median,133,Hampi Nagar,50
+122,spatial_greedy_nearest_city_median,134,Bapuji Nagar,50
+223,spatial_greedy_nearest_city_median,135,Padarayanapura,50
+34,spatial_greedy_nearest_city_median,136,Jagajivanaramnagar,50
+135,spatial_greedy_nearest_city_median,137,Rayapuram,50
+107,spatial_greedy_nearest_city_median,138,Chalavadipalya,50
+184,spatial_greedy_nearest_city_median,139,K R Market,50
+30,spatial_greedy_nearest_city_median,140,Chamrajapet,50
+70,spatial_greedy_nearest_city_median,141,Azad Nagar,50
+121,spatial_greedy_nearest_city_median,142,Sunkenahalli,50
+55,spatial_greedy_nearest_city_median,143,Vishveshwara Puram,50
+176,spatial_greedy_nearest_city_median,144,Siddapura,50
+8,spatial_greedy_nearest_city_median,145,Hombegowda Nagara,50
+214,spatial_greedy_nearest_city_median,146,Lakkasandra,50
+208,spatial_greedy_nearest_city_median,147,Adugodi,50
+177,spatial_greedy_nearest_city_median,148,Ejipura,50
+144,spatial_greedy_nearest_city_median,149,Varthuru,50
+22,spatial_greedy_nearest_city_median,150,Bellanduru,50
+158,spatial_greedy_nearest_city_median,151,Koramangala,50
+14,spatial_greedy_nearest_city_median,152,Suddagunte Palya,50
+54,spatial_greedy_nearest_city_median,153,Jayanagar,50
+145,spatial_greedy_nearest_city_median,154,Basavanagudi,50
+33,spatial_greedy_nearest_city_median,155,Hanumanth Nagar,50
+146,spatial_greedy_nearest_city_median,156,Srinagar,50
+150,spatial_greedy_nearest_city_median,157,Gali Anjenaya Temple ward,50
+10,spatial_greedy_nearest_city_median,158,Deepanjali Nagar,50
+35,spatial_greedy_nearest_city_median,159,Kengeri,50
+47,spatial_greedy_nearest_city_median,160,Rajarajeshwari Nagar,50
+159,spatial_greedy_nearest_city_median,161,Hosakerehalli,50
+119,spatial_greedy_nearest_city_median,162,Girinagar,50
+110,spatial_greedy_nearest_city_median,163,Katriguppe,50
+148,spatial_greedy_nearest_city_median,164,Vidyapeeta ward,50
+18,spatial_greedy_nearest_city_median,165,Ganesh Mandir ward,50
+179,spatial_greedy_nearest_city_median,166,Karisandra,50
+48,spatial_greedy_nearest_city_median,167,Yediyur,50
+149,spatial_greedy_nearest_city_median,168,Pattabhiram Nagar,50
+109,spatial_greedy_nearest_city_median,169,Byrasandra,50
+212,spatial_greedy_nearest_city_median,170,Jayanagar East,50
+112,spatial_greedy_nearest_city_median,171,Gurappanapalya,50
+5,spatial_greedy_nearest_city_median,172,Madivala,50
+56,spatial_greedy_nearest_city_median,173,Jakkasandra,50
+7,spatial_greedy_nearest_city_median,174,HSR Layout,50
+17,spatial_greedy_nearest_city_median,175,Bommanahalli,50
+3,spatial_greedy_nearest_city_median,176,BTM Layout,50
+16,spatial_greedy_nearest_city_median,177,J P Nagar,50
+111,spatial_greedy_nearest_city_median,178,Sarakki,50
+180,spatial_greedy_nearest_city_median,179,Shakambari Nagar,50
+155,spatial_greedy_nearest_city_median,180,Banashankari Temple ward,50
+157,spatial_greedy_nearest_city_median,181,Kumaraswamy Layout,50
+210,spatial_greedy_nearest_city_median,182,Padmanabha Nagar,50
+19,spatial_greedy_nearest_city_median,183,Chikkalsandra,50
+156,spatial_greedy_nearest_city_median,184,Uttarahalli,50
+117,spatial_greedy_nearest_city_median,185,Yelchenahalli,50
+118,spatial_greedy_nearest_city_median,186,Jaraganahalli,50
+53,spatial_greedy_nearest_city_median,187,Puttenahalli,50
+124,spatial_greedy_nearest_city_median,188,Bilekhalli,50
+24,spatial_greedy_nearest_city_median,189,Hongasandra,50
+218,spatial_greedy_nearest_city_median,190,Mangammanapalya,50
+162,spatial_greedy_nearest_city_median,191,Singasandra,50
+147,spatial_greedy_nearest_city_median,192,Begur,50
+51,spatial_greedy_nearest_city_median,193,Arakere,50
+15,spatial_greedy_nearest_city_median,194,Gottigere,50
+4,spatial_greedy_nearest_city_median,195,Konankunte,50
+2,spatial_greedy_nearest_city_median,196,Anjanapura,50
+50,spatial_greedy_nearest_city_median,197,Vasanthpura,50
+152,spatial_greedy_nearest_city_median,198,Hemmigepura,50

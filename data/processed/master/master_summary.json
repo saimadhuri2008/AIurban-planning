@@ -1,0 +1,33 @@
+{
+  "h3_master_rows": 607,
+  "wards_master_rows": 198,
+  "files_used": {
+    "wards": "C:\\AIurban-planning\\data\\processed\\wards\\wards_master_enriched.geojson",
+    "h3_grid": "C:\\AIurban-planning\\data\\processed\\h3_wards\\h3_grid_res8_mapped.geojson",
+    "h3_to_wards": "C:\\AIurban-planning\\data\\processed\\h3_wards\\h3_to_wards_mapping_res8.csv",
+    "buildings": "C:\\AIurban-planning\\data\\processed\\buildings_processed.ndjson",
+    "population_wards": "C:\\AIurban-planning\\data\\processed\\population_wards.csv",
+    "population_h3": "C:\\AIurban-planning\\data\\processed\\population_h3_res8.geojson",
+    "income_h3": "C:\\AIurban-planning\\outputs\\income_housing_h3_gentrification.geojson",
+    "economy_h3": "C:\\AIurban-planning\\outputs\\economy_h3_growth.geojson",
+    "roads": "C:\\AIurban-planning\\outputs\\roads_enriched.geojson",
+    "od": "C:\\AIurban-planning\\data\\processed\\od_flows.csv",
+    "metro_csv": "C:\\AIurban-planning\\data\\processed\\metro_stations_enriched.csv",
+    "metro_geo": "C:\\AIurban-planning\\data\\processed\\metro_stations.geojson",
+    "traffic": "C:\\AIurban-planning\\data\\processed\\traffic_congestion.geojson",
+    "water": "C:\\AIurban-planning\\data\\processed\\water_network.geojson",
+    "sewage": "C:\\AIurban-planning\\data\\processed\\sewage_network.geojson",
+    "electricity": "C:\\AIurban-planning\\data\\processed\\electricty\\electricity_assets.geojson",
+    "airq_geo": "C:\\AIurban-planning\\data\\processed\\air_quality\\air_quality_readings.geojson",
+    "lst": "C:\\AIurban-planning\\outputs\\lst_climate_trend_h3.geojson",
+    "ndvi": "C:\\AIurban-planning\\outputs\\ndvi_urban_hotspot_h3.geojson",
+    "flood": "C:\\AIurban-planning\\outputs\\flood_climate_trend_h3.geojson",
+    "schools_h3": "C:\\AIurban-planning\\outputs\\schools_h3_res8.geojson",
+    "health_h3": "C:\\AIurban-planning\\outputs\\health_h3_res8.geojson",
+    "parks_wards": "C:\\AIurban-planning\\data\\processed\\parks_wards_res8.csv",
+    "emergency_h3": "C:\\AIurban-planning\\outputs\\emergency_services_h3.geojson",
+    "h3_metrics": "C:\\AIurban-planning\\outputs\\h3_metrics.geojson",
+    "computed_h3": "C:\\AIurban-planning\\outputs\\computed_features_h3.geojson",
+    "outdir": "C:\\AIurban-planning\\data\\processed\\master"
+  }
+}

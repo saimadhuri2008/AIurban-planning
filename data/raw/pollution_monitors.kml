@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>pollution_monitors.csv</name>
+	<open>1</open>
+	<Schema name="pollution_monitors" id="S_pollution_monitors_SSDSID">
+		<SimpleField type="string" name="LOCATION"><displayName>&lt;b&gt;LOCATION&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DATE"><displayName>&lt;b&gt;DATE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUDE"><displayName>&lt;b&gt;LONGITUDE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DEVICE_NAME"><displayName>&lt;b&gt;DEVICE_NAME&lt;/b&gt;</displayName>
+</SimpleField>		
+		<SimpleField type="double" name="LATITUDE"><displayName>&lt;b&gt;LATITUDE&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LOCATION</b></td><td>$[pollution_monitors/LOCATION]</td></tr>
+  <tr><td><b>DATE</b></td><td>$[pollution_monitors/DATE]</td></tr>
+  <tr><td><b>LONGITUDE</b></td><td>$[pollution_monitors/LONGITUDE]</td></tr>
+  <tr><td><b>DEVICE_NAME</b></td><td>$[pollution_monitors/DEVICE_NAME]</td></tr>
+  <tr><td><b>AQI</b></td><td>$[pollution_monitors/AQI]</td></tr>
+  <tr><td><b>LATITUDE</b></td><td>$[pollution_monitors/LATITUDE]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LOCATION</b></td><td>$[pollution_monitors/LOCATION]</td></tr>
+  <tr><td><b>DATE</b></td><td>$[pollution_monitors/DATE]</td></tr>
+  <tr><td><b>LONGITUDE</b></td><td>$[pollution_monitors/LONGITUDE]</td></tr>
+  <tr><td><b>DEVICE_NAME</b></td><td>$[pollution_monitors/DEVICE_NAME]</td></tr>
+  <tr><td><b>AQI</b></td><td>$[pollution_monitors/AQI]</td></tr>
+  <tr><td><b>LATITUDE</b></td><td>$[pollution_monitors/LATITUDE]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>pollution_monitors</name>
+		<open>1</open>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">BTM Layout, Bengaluru - CPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.6101</SimpleData>
+					<SimpleData name="DEVICE_NAME">BTM Layout</SimpleData>
+					<SimpleData name="LATITUDE">12.9166</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.6101,12.91660000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Bapuji Nagar, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5397</SimpleData>
+					<SimpleData name="DEVICE_NAME">Bapuji Nagar</SimpleData>
+					<SimpleData name="LATITUDE">12.9568</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.53969999999998,12.95679999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">City Railway Station, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5697</SimpleData>
+					<SimpleData name="DEVICE_NAME">City Railway Station</SimpleData>
+					<SimpleData name="LATITUDE">12.9781</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.56970000000003,12.97810000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Hebbal, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5988</SimpleData>
+					<SimpleData name="DEVICE_NAME">Hebbal</SimpleData>
+					<SimpleData name="LATITUDE">13.0354</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.59879999999997,13.03540000000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Hombegowda Nagar, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5949</SimpleData>
+					<SimpleData name="DEVICE_NAME">Hombegowda Nagar</SimpleData>
+					<SimpleData name="LATITUDE">12.9375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.59489999999998,12.93749999999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Jayanagar 5th Block, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5842</SimpleData>
+					<SimpleData name="DEVICE_NAME">Jayanagar 5th Block</SimpleData>
+					<SimpleData name="LATITUDE">12.9208</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.5842,12.92079999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Jigani, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.6299</SimpleData>
+					<SimpleData name="DEVICE_NAME">Jigani</SimpleData>
+					<SimpleData name="LATITUDE">12.7816</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.62991449999998,12.78162789999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Kasturi Nagar, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.6642</SimpleData>
+					<SimpleData name="DEVICE_NAME">Kasturi Nagar</SimpleData>
+					<SimpleData name="LATITUDE">13.0039</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.66421700000001,13.00387200000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Peenya, Bengaluru - CPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.5197</SimpleData>
+					<SimpleData name="DEVICE_NAME">Peenya</SimpleData>
+					<SimpleData name="LATITUDE">13.0285</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.51970000000001,13.02850000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Sanegurava Halli, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.6218</SimpleData>
+					<SimpleData name="DEVICE_NAME">Sanegurava Halli</SimpleData>
+					<SimpleData name="LATITUDE">13.0302</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.62180000000001,13.03019999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Shivapura_Peenya, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.508</SimpleData>
+					<SimpleData name="DEVICE_NAME">Shivapura_Peenya</SimpleData>
+					<SimpleData name="LATITUDE">13.0246</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.50801150000001,13.02463420000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pollution_monitors_SSDSID">
+					<SimpleData name="LOCATION">Silk Board, Bengaluru - KSPCB</SimpleData>
+					<SimpleData name="DATE">18-10-2023 13:48</SimpleData>
+					<SimpleData name="LONGITUDE">77.6238</SimpleData>
+					<SimpleData name="DEVICE_NAME">Silk Board</SimpleData>
+					<SimpleData name="LATITUDE">12.9177</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.62380000000002,12.91770000000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
