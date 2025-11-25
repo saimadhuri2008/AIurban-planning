@@ -8,3 +8,19 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Ignore all large data folders
+data/interim/
+data/processed/
+data/raw/
+cache/
+*.geojson
+*.osm
+*.pbf
+*.kml
+*.csv
+*.json
+*.tif
+*.parquet
+*.gpkg
+*.shp
