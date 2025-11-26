@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  phase2A_analysis:
+    cmd: python src\models\statistical\analysis.py --wards 
+      data\processed\master\wards_master_fixed.parquet --outdir 
+      results/statistical_analysis
+    deps:
+    - path: data\processed\master\wards_master_fixed.parquet
+      hash: md5
+      md5: e0b2955310be47019d7c530d4940b8cc
+      size: 888595
+    - path: src\models\statistical\analysis.py
+      hash: md5
+      md5: e878e1cea8daaa04057e67b6c0e33c76
+      size: 12007
+    outs:
+    - path: results\statistical_analysis
+      hash: md5
+      md5: 21cd65a533d7792348458333894f69a0.dir
+      size: 4018625
+      nfiles: 12

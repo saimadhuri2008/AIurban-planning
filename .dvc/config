@@ -1,0 +1,6 @@
+[core]
+    remote = localstore
+['remote "gdrive_remote"']
+    url = gdrive://1Qw3V0jdVuSyZg4zw4lFmA1jzkSG7gxWj
+['remote "localstore"']
+    url = C:\AIurban-planning\.dvc_cache_remote
