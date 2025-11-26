@@ -1,0 +1,12 @@
+{
+  "ols_AIC": 216.05501991916407,
+  "ols_BIC": 235.7846221033313,
+  "ols_params": {
+    "Intercept": -11.087461562046384,
+    "income_index_mean": 6.127404948723927,
+    "it_job_density_mean": -0.02757464264390378,
+    "built_area_m2_sum": 4.927802648720642e-06,
+    "congestion_index_mean": 43.3359990516462,
+    "aqi_mean": -0.012254731880882459
+  }
+}

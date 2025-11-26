@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     log_population_est   R-squared:                       0.698
+Model:                            OLS   Adj. R-squared:                  0.690
+Method:                 Least Squares   F-statistic:                     16.08
+Date:                Wed, 26 Nov 2025   Prob (F-statistic):           2.25e-11
+Time:                        15:16:10   Log-Likelihood:                -102.03
+No. Observations:                 198   AIC:                             216.1
+Df Residuals:                     192   BIC:                             235.8
+Df Model:                           5                                         
+Covariance Type:                  HC3                                         
+=========================================================================================
+                            coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept               -11.0875     17.231     -0.643      0.520     -44.860      22.685
+income_index_mean         6.1274      1.501      4.083      0.000       3.186       9.069
+it_job_density_mean      -0.0276      0.007     -3.814      0.000      -0.042      -0.013
+built_area_m2_sum      4.928e-06   6.96e-07      7.079      0.000    3.56e-06    6.29e-06
+congestion_index_mean    43.3360     31.737      1.365      0.172     -18.867     105.539
+aqi_mean                 -0.0123      0.037     -0.333      0.739      -0.084       0.060
+==============================================================================
+Omnibus:                        2.498   Durbin-Watson:                   1.998
+Prob(Omnibus):                  0.287   Jarque-Bera (JB):                2.493
+Skew:                          -0.270   Prob(JB):                        0.287
+Kurtosis:                       2.893   Cond. No.                     1.14e+08
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 1.14e+08. This might indicate that there are
+strong multicollinearity or other numerical problems.
